@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.nav{ 
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   padding: 1rem 6.5rem;
+   background-color:#222;
+   z-index: 1000;
+
+}
+
+.nav h2{
+    color: white;
+    font-size: 1.7rem;
+
+}
+.nav h2 span{
+    color: rgb(211, 37, 66);
+}
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#item li{
+    list-style: none;
+    padding-right: 50px;
+   
+}
+
+#item li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+#item li a:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+
+
+.back{
+    background-image: url(sam.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    margin-top: 60px;
+    z-index: -1;
+
+}
+
+.back .overlay{
+    position: relative;
+    background-color: #171819;
+    width: 100%;
+
+
+    height: 100vh;
+    opacity:0.85; 
+}
+
+.mid{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+ 
+.mid p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+    
+
+}
+
+.mid h2{
+    color:#fff;
+    font-size: 3rem;
+
+}
+
+
+
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.mid .btn a.simple{
+   color: #fff;
+   font-weight: 500;
+   padding: 0.9rem 1.6rem;
+}
+.mid .btn a.border{
+    color: #ff5733;
+    border: 1px solid #ff5733;
+    font-weight: 500;
+    padding:0.3rem;
+    border-radius: 3px;
+ }
+
+ .mid .btn a.simple:hover{
+    color: #ff5733;
+ }
+ .mid .btn a.border:hover{
+    background-color: white;
+    border: 1px solid white;
+ }
+
+ .Bmi {
+   
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    background: #171819;
+
+ }
+
+ .Bmi h2{
+    
+    color: #fff;
+ }
+
+ 
+#bmiForm {
+    background: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#bmiForm label {
+    color: #fff;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+#bmiForm input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+#bmiForm button {
+    width: 100%;
+    padding: 1rem;
+    background: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease;
+}
+
+#bmiForm button:hover {
+    background: #e64a2e;
+}
+
+#bmiResult {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.suggestion {
+    background: #f9f9f9;
+    padding: 8rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.workout-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 50%;
+   
+    transition: transform 0.3s ease;
+}
+
+.workout-card:hover {
+    transform: translateY(-5px);
+}
+
+.workout-card .img {
+    
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.workout-card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.workout-card:hover .img img {
+    transform: scale(1.1);
+}
+
+.workout-card .text {
+
+    padding: 1.5rem;
+}
+
+.workout-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.workout-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.suggestion .workout h3{
+    
+    font-size: 1.5rem;
+}
+
+.suggestion .diet h3{
+    font-size: 1.5rem;
+}
+.suggestion .workout .img img{
+    box-sizing:content-box;
+    width:100%;
+    object-fit: cover;
+  border-radius: 10px;
+
+
+}
+.suggestion .workout .img img:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+
+
+
+.suggestion .diet .img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.suggestion .diet .img img:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.workout-list, .meal-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.workout-list li, .meal-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+workout-list li:last-child, .meal-list li:last-child {
+    border-bottom: none;
+}
+
+.foot{
+    display: flex;
+    background: #222;
+    padding: 1.2rem;
+    flex-direction: column;
+}
+
+.foot .text{
+    
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.foot .icon{
+    margin:20px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.foot .icon i{
+    font-size:24px ;
+    color: #f9f9f9;
+    margin:0 10px;
+    transition: color 0.3s ease;
+   
+}
+
+.foot .icon i:hover{
+    color:#ff5733;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    z-index: 2000;
+}
+
+.form-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1500;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 300px;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-container .btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: #ff5733;
+    color: white;
+}
+
+.form-container .cancel {
+    background-color: #666;
+}
+
+.form-container .btn:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
